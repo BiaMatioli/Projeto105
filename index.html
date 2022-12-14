@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Identificador de Emoções</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h3>Identificador de Emoções</h3>
+
+            <p>Bravo(a) <hr>
+            Chorando <hr>
+            Feliz <hr>
+            Triste
+            </p>
+
+            <br><br>
+
+            <div id="camera"></div>
+
+            <br><br>
+
+            <div id="resultado"></div>
+
+            <button id="TirarFoto" onclick="tirarFoto()" class="btn btn-info">Capturar imagem</button>
+            
+            <br><br>
+
+            <button id="IdentificarFoto" onclick="identificar()" class="btn btn-info">Identificar a foto</button>
+
+            <br><br>
+
+            <h4>A pessoa está <span id="spanEmocao"></span></h4>
+            <h4>Precisão: <span id="spanFinal"></span></h4>
+        </center>
+    </body>
+    <script src="main.js"></script>
+</html>

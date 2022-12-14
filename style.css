@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(190, 240, 255);
+}
+
+span{
+    font-weight: bold;
+    color: lightcoral;
+}
+
+h3{
+    font-weight: bold;
+}
